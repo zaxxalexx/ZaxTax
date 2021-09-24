@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+/* header */
+header, #logo, img, nav {
+  display: flex;
+  border: 1px solid black;
+  margin: 5px;
+}
+#header {
+  position: relative;
+  background-color: yellow;
+    }
+#logo {
+    width: 25%;
+}
+img {
+  height: 250px;
+  width: auto;
+}
+#nav {
+  width: 75%;
+  justify-content: center;
+  }
+/* main */
+
+main, #services, #about-us, #news, #contact, .container, .content {
+  border: 1px solid blue;
+  margin: 5px;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
