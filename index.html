@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
@@ -9,10 +10,13 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <title>ZaxTax</title>
 </head>
+
 <body>
-  <header>
-    <div>logo</div>
-    <nav class="nav">
+  <header id="header">
+    <div id="logo" class="left">
+      <img src="logo_zaxtax_szöveges.png" alt="ZaxTax">
+    </div>
+    <nav id="nav" class="right">
       <ul>
         <li>
           <a href="#services">Szolgáltatásaink</a>
@@ -29,13 +33,106 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main id="main">
     <div id="services">
       <h1>Szolgáltatásaink</h1>
-      <div>Könyvelés</div>
-      <div>Bérszámfejtés</div>
-      <div>Adótanácsadás</div>
-      <div>Vállalkozás indítás</div>
+      <div class="container">
+        <h2>Vállalkozás indítás</h2>
+        <div>
+          kép
+        </div>
+        <div class="content">
+          <p>Egyéni vállalkozás indítása 10 perc alatt?</p>
+          <p>Nem probléma!</p>
+          <p>Szükség van hozzá:</p>
+          <ul>
+            <li>ügyfélkapu regisztrációra</li>
+            <li>személyes iratokra</li>
+            <li>székhelyre és tevékenységi körre</li>
+            <li>előzetes konzultációra a megfelelő adózási forma kiválasztásához </li>
+          </ul>
+          <p>Gazdasági társaságot indítanál?</p>
+          <p>Együttműködő ügyvéd partnereink szívesen állnak rendelkezésedre.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Könyvelés</h2>
+        <div>
+          kép
+        </div>
+        <div class="content">
+          <p>Egyéni és társas vállalkozások könyvelése az egész ország területén.</p>
+          <p>Mégis hogyan?</p>
+          <p>100% online együttműködéssel.</p>
+          <p>Kollégáimmal azon vagyunk, hogy a klasszikus könyvelőiroda feelingből kilépve egy ügyfélközpontú, közvetlen
+            kapcsolatot alakítsunk ki amellett, hogy megőrizzük a professzionális szolgáltatásnyújtás folyamatát.</p>
+          <p>A naprakész könyvelés mellett igény szerint havi, negyedéves riportokkal támogatjuk ügyfeleinket.</p>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Adótanácsadás</h2>
+        <div>
+          kép
+        </div>
+        <div class="content">
+          <p>Online állunk rendelkezésre az alábbi témákban:</p>
+          <ol>
+            <li>Magánszemélyeknek:
+              <ul>
+                <li>SZJA bevallások készítése</li>
+                <li>Gyermekek utáni ellátások, kedvezmények</li>
+              </ul>
+            </li>
+            <li>Vállalkozóknak:
+              <ul>
+                <li>Elmaradt bevallások pótlása</li>
+                <li>Külföldi értékesítések és szolgáltatás nyújtások</li>
+                <li>Dropshipping ügyletek</li>
+                <li>Digitális termék értékesítése</li>
+                <li>Ingatlan kiadás</li>
+                <li>Szálláshely szolgáltatás</li>
+                <li>Építőipari tevékenység</li>
+                <li>Online és offline kiskereskedelem</li>
+              </ul>
+            </li>
+          </ol>
+        </div>  
+      </div>
+      <div class="container">
+        <h2>Bérszámfejtés</h2>
+        <div>
+          kép
+        </div>
+        <div class="content">
+          <p>Ha csak a bérszámfejtéssel kapcsolatos adminisztrációt szeretnéd kiszervezni...</p>
+          <p>Ebben tudunk segíteni:</p>
+          <ul>
+            <li>Vállalkozói kivét számfejtése</li>
+            <li>Munkavállalók bérének számfejtése</li>
+            <li>Egyéb juttatások elszámolása</li>
+            <li>Társadalombiztosítási ügyintézés</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Üzletviteli tanácsadás</h2>
+        <div>
+          kép
+        </div>
+        <div class="content">
+          <p>Hiszünk abban, hogy egy jól megalapozott vállalati stratégia  a hosszú távú működés záloga.</p>
+          <p>Segítünk az ötlet gyakorlatba történő adaptálásakor, a működési, eljárási és pénzügyi rend kialapításában.</p>
+          <p>A cég átvilágítása során ellenőrizzük a következőket:</p>
+          <ul>
+            <li>Szervezeti felépítése</li>
+            <li>Informatikai és adminisztratív rendszer működése</li>
+            <li>vállalkozás pénzügyi / likviditási helyzete</li>
+            <li>Vállalkozás szerződései</li>
+            <li>Esetleges peres ügyek, várható kockázatok</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div id="about-us">
       <h1>Rólunk</h1>
@@ -52,7 +149,7 @@
       <ul>
         <li>telefon <i class="fa fa-phone-square" aria-hidden="true"></i></li>
         <li>email <i class="fa fa-envelope-square" aria-hidden="true"></i></li>
-        <li>Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+        <li><a href="https://www.facebook.com/zaxtaxonline">Facebook</a> <i class="fa fa-facebook-square" aria-hidden="true"></i></li>
       </ul>
     </div>
   </main>
@@ -61,4 +158,5 @@
     <div>Made by zaxxalexx</div>
   </footer>
 </body>
+
 </html>
