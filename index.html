@@ -4,6 +4,7 @@
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="shortcut icon" type="image/x-icon" href="ZaxTax_hatter.png">
   <meta charset="utf-8">
   <title>ZaxTax</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +15,7 @@
 <body>
   <header id="header">
     <div id="logo" class="left">
-      <img src="logo_zaxtax_szöveges.png" alt="ZaxTax">
+      <img src="Logo.png" alt="ZaxTax">
     </div>
     <nav id="nav" class="right">
       <ul>
@@ -38,8 +39,8 @@
       <h1>Szolgáltatásaink</h1>
       <div class="container">
         <h2>Vállalkozás indítás</h2>
-        <div>
-          kép
+        <div class="picture">
+          <img src="vallalkozasinditas.png" alt="Vállakozás indítás">
         </div>
         <div class="content">
           <p>Egyéni vállalkozás indítása 10 perc alatt?</p>
@@ -58,8 +59,8 @@
 
       <div class="container">
         <h2>Könyvelés</h2>
-        <div>
-          kép
+        <div class="picture">
+          <img src="konyveles.png" alt="Könyvelés">
         </div>
         <div class="content">
           <p>Egyéni és társas vállalkozások könyvelése az egész ország területén.</p>
@@ -72,8 +73,8 @@
       </div>
       <div class="container">
         <h2>Adótanácsadás</h2>
-        <div>
-          kép
+        <div class="picture">
+          <img src="Taxhelp.png" alt="Adótanácsadás">
         </div>
         <div class="content">
           <p>Online állunk rendelkezésre az alábbi témákban:</p>
@@ -97,12 +98,12 @@
               </ul>
             </li>
           </ol>
-        </div>  
+        </div>
       </div>
       <div class="container">
         <h2>Bérszámfejtés</h2>
-        <div>
-          kép
+        <div class="picture">
+          <img src="payroll.png" alt="Bérszámfejtés">
         </div>
         <div class="content">
           <p>Ha csak a bérszámfejtéssel kapcsolatos adminisztrációt szeretnéd kiszervezni...</p>
@@ -117,12 +118,13 @@
       </div>
       <div class="container">
         <h2>Üzletviteli tanácsadás</h2>
-        <div>
-          kép
+        <div class="picture">
+          <img src="tanacsadas.png" alt="Üzletviteli">
         </div>
         <div class="content">
-          <p>Hiszünk abban, hogy egy jól megalapozott vállalati stratégia  a hosszú távú működés záloga.</p>
-          <p>Segítünk az ötlet gyakorlatba történő adaptálásakor, a működési, eljárási és pénzügyi rend kialapításában.</p>
+          <p>Hiszünk abban, hogy egy jól megalapozott vállalati stratégia a hosszú távú működés záloga.</p>
+          <p>Segítünk az ötlet gyakorlatba történő adaptálásakor, a működési, eljárási és pénzügyi rend kialapításában.
+          </p>
           <p>A cég átvilágítása során ellenőrizzük a következőket:</p>
           <ul>
             <li>Szervezeti felépítése</li>
@@ -146,11 +148,24 @@
     </div>
     <div id="contact">
       <h1>Kapcsolat</h1>
-      <ul>
-        <li>telefon <i class="fa fa-phone-square" aria-hidden="true"></i></li>
-        <li>email <i class="fa fa-envelope-square" aria-hidden="true"></i></li>
-        <li><a href="https://www.facebook.com/zaxtaxonline">Facebook</a> <i class="fa fa-facebook-square" aria-hidden="true"></i></li>
-      </ul>
+      <div>
+        <ul>
+          <li>telefon <i class="fa fa-phone-square" aria-hidden="true"></i></li>
+          <li>email <i class="fa fa-envelope-square" aria-hidden="true"></i></li>
+          <li><a href="https://www.facebook.com/zaxtaxonline">Facebook</a> <i class="fa fa-facebook-square"
+              aria-hidden="true"></i></li>
+        </ul>
+      </div>
+      <div>
+        <form action="send.php" method="post" enctype="multipart/form-data">
+          <fieldset>
+          <input type="text" name="nev" id="nev" placeholder="Teljes Név">
+          <input type="tel" name="phone" id="phone" placeholder="Telefonszám">
+          <input type="email" name="email" id="email" placeholder="E-mail cím">
+          <textarea name="info" id="info" cols="30" rows="10" placeholder="Egyéb információk"></textarea>
+        </fieldset>
+        </form>
+      </div>
     </div>
   </main>
   <footer>
