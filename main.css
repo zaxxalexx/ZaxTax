@@ -1,34 +1,63 @@
 * {
   box-sizing: border-box;
 }
+
 /* header */
 header, #logo, img, nav {
-  display: flex;
-  border: 1px solid black;
-  margin: 5px;
-}
-#header {
   position: relative;
-  background-color: yellow;
-    }
+  margin: 1px;
+}
+header {
+  background-image: url(ZaxTax_Header.png);
+  background-size: cover;
+  background-position: center center;
+}
 #logo {
-    width: 25%;
+  width: auto;
+  text-align: center;
 }
 img {
   height: 250px;
   width: auto;
+  object-fit: cover;
+}
+.picture {
+  text-align: center;
 }
 #nav {
-  width: 75%;
-  justify-content: center;
+  width: auto;
+  text-align: center;
+  padding: 2px;
   }
+li a {
+  color: white;
+}
 /* main */
 
 main, #services, #about-us, #news, #contact, .container, .content {
-  border: 1px solid blue;
-  margin: 5px;
+/*  border: 1px solid blue; */
+  margin: 1px;
+}
+p, h1, h2, h3, h4, h5, ul, ol, li {
+  margin-bottom: 15px;
 }
 h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 3rem;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+p {
+  font-size: 1rem;
+  text-align: justify;
+}
+.container {
+  background-color: lightgray;
+  margin-bottom: 10px;
+  padding: 2px;
+}
+ol, ul, li {
+	margin-left: 1rem;
 }
