@@ -3,12 +3,12 @@
 
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <link rel="shortcut icon" type="image/x-icon" href="ZaxTax_hatter.png">
   <meta charset="utf-8">
   <title>ZaxTax</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <title>ZaxTax</title>
 </head>
 
@@ -142,28 +142,32 @@
     </div>
     <div id="news">
       <h1>Hírek</h1>
-      <div>hírek1</div>
+      <p id="quote">“A tudásod teljes mértékben értéktelen – kivéve ha használod.” – Csehov</p>
       <div>hírek2</div>
       <div>hírek3</div>
     </div>
     <div id="contact">
       <h1>Kapcsolat</h1>
-      <div>
-        <ul>
-          <li>telefon <i class="fa fa-phone-square" aria-hidden="true"></i></li>
-          <li>email <i class="fa fa-envelope-square" aria-hidden="true"></i></li>
-          <li><a href="https://www.facebook.com/zaxtaxonline">Facebook</a> <i class="fa fa-facebook-square"
-              aria-hidden="true"></i></li>
+      <div id="availability">
+        <ul id="availability">
+          <li><i class="fa fa-phone-square" aria-hidden="true"></i>telefon</li>
+          <li><i class="fa fa-envelope-square" aria-hidden="true"></i>zaxtaxonline@gmail.com</li>
+          <li><i class="fa fa-facebook-square" aria-hidden="true"></i> <a href="https://www.facebook.com/zaxtaxonline"
+              id="facebook">Facebook</a></li>
         </ul>
       </div>
-      <div>
+      <div id="form">
         <form action="send.php" method="post" enctype="multipart/form-data">
           <fieldset>
-          <input type="text" name="nev" id="nev" placeholder="Teljes Név">
-          <input type="tel" name="phone" id="phone" placeholder="Telefonszám">
-          <input type="email" name="email" id="email" placeholder="E-mail cím">
-          <textarea name="info" id="info" cols="30" rows="10" placeholder="Egyéb információk"></textarea>
-        </fieldset>
+            <legend><h3>Küldj üzenetet!</h3></legend>
+              <label for="nev">Név</label>
+              <input type="text" name="nev" id="nev" placeholder="Teljes Név">
+              <label for="phone">Telefonszám</label>
+              <input type="tel" name="phone" id="phone" placeholder="Telefonszám">
+              <label for="email">E-mail cím</label>
+              <input type="email" name="email" id="email" placeholder="E-mail cím">
+              <textarea name="info" id="info" cols="30" rows="10" placeholder="Egyéb információk"></textarea>
+          </fieldset>
         </form>
       </div>
     </div>
