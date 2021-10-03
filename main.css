@@ -40,6 +40,7 @@ main, #services, #about-us, #news, #contact, .container, .content {
 }
 p, h1, h2, h3, h4, h5, ul, ol, li {
   margin-bottom: 15px;
+  font-family: Montserrat;
 }
 h1 {
   text-align: center;
@@ -57,7 +58,31 @@ p {
   background-color: lightgray;
   margin-bottom: 10px;
   padding: 2px;
+  border-radius: 10px;
 }
 ol, ul, li {
 	margin-left: 1rem;
+}
+/* Contact */
+#quote {
+  font-style: italic;
+}
+#availability {
+  text-align: center;
+  list-style-type: none;
+  display: block;
+}
+
+#facebook {
+  color: black;
+}
+#form {
+  display: block;
+}
+
+/* Footer */
+
+footer {
+  background-color: gray;
+  text-align: center;
 }
