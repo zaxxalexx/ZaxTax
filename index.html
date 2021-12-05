@@ -20,10 +20,10 @@
     <nav id="nav" class="right">
       <ul>
         <li>
-          <a href="#services">Szolgáltatásaink</a>
+          <a href="#about-me">Rólam</a>
         </li>
         <li>
-          <a href="#about-us">Rólunk</a>
+          <a href="#services">Szolgáltatásaink</a>
         </li>
         <li>
           <a href="#news">Hírek</a>
@@ -35,6 +35,33 @@
     </nav>
   </header>
   <main id="main">
+    <h2 id="quote">„A jó könyvelő nem a szükséges rosszat, hanem a biztonságot jelenti a vállalkozások számára.”</h2>
+    <div id="about-me">
+      <h1>Rólam</h1>
+      <div class="container">
+        <div id="career">
+          <p>Üdvözöllek a ZAXTAX könyvelőiroda honlapján, Zax Kitti vagyok.</p>
+          <p>Minden bizalmi munka alapja a másik fél megismerése, ezért engedd meg,
+            hogy bemutatkozzam Neked. Ígérem, rövid leszek!</p>
+          <p>Mindig is a számok világában éreztem otthon magam,
+            így nem volt kérdés számomra a közgazdasági pálya választása sem,
+            bár gyerekként még nem tudtam pontosan megfogalmazni, hol is fogok kikötni vele.
+            A célok akkor tisztultak le számomra, amikor egy kis könyvelőirodában kezdtem el
+            az elméleti tudást a gyakorlatba átültetni. Tudtam, hogy megtaláltam az utam.</p>
+          <p>Tanulmányaimban céltudatosan haladtam, hogy minél széleskörűbb rálátásom legyen a vállalatok számvitelére,
+            adózására. Ezt a gyakorlatban is sikerült véghez vinni,
+            a könyvelőirodai munkától egészen egy középvállalat könyveléséig vannak tapasztalataim.
+            Láttam belülről különböző cégek működését, a szerződéskötéstől a számlázásig,
+            nem csak külső szemlélője voltam a könyvelt cégeknek.</p>
+          <p>A tanulás a szakmámban elengedhetetlen, évente többször is részt veszek továbbképzéseken,
+            hogy ügyfeleim a lehető legnagyobb biztonságban, jó kezekben tudják vállalkozásukat.
+            Rendelkezem mérlegképese könyvelői és adótanácsadói regisztrációval is.</p>
+        </div>
+        <div id="profil">
+          <img src="profil.png" alt="Profilkép">
+        </div>
+      </div>
+    </div>
     <div id="services">
       <h1>Szolgáltatásaink</h1>
       <div class="container">
@@ -136,15 +163,23 @@
         </div>
       </div>
     </div>
-    <div id="about-us">
-      <h1>Rólunk</h1>
-      <div>XY</div>
-    </div>
     <div id="news">
-      <h1>Hírek</h1>
-      <p id="quote">“A tudásod teljes mértékben értéktelen – kivéve ha használod.” – Csehov</p>
-      <div>hírek2</div>
-      <div>hírek3</div>
+      <h1>Miért engem válassz? </h1>
+      <div class="container">
+        <p>Rengeteg egyéni vállalkozást indítottam már útjára,
+          ismerem a kezdő vállalkozók küzdelmeit, kételyeit.
+          Biztos hátteret tudok nyújtani nekik,
+          amíg rutinná nem válik számukra a vállalkozási folyamatok kialakítása.
+        </p>
+        <p>A folyamatos jogszabályi változások (és valljuk be, nem sok rendelkezés marad érvényben 1 évnél tovább)
+          a már működő vállalkozóknak is tudnak meglepetéseket okozni.
+          Segítek a lehető legjobb adózási mód kiválasztásában, és folyamatos tájékoztatással.
+        </p>
+        <p>2014 óta van mérlegképes könyvelői és adótanácsadói regisztrációm.
+          Rendelkezem felelősségbiztossítással, szerződéskötés és számlaadás mellett
+          vállalok csak megbízást, ez így természetes.
+        </p>
+      </div>
     </div>
     <div id="contact">
       <h1>Kapcsolat</h1>
@@ -159,23 +194,48 @@
       <div id="form">
         <form action="send.php" method="post" enctype="multipart/form-data">
           <fieldset>
-            <legend><h3>Küldj üzenetet!</h3></legend>
-              <label for="nev">Név</label>
-              <input type="text" name="nev" id="nev" placeholder="Teljes Név">
-              <label for="phone">Telefonszám</label>
-              <input type="tel" name="phone" id="phone" placeholder="Telefonszám">
-              <label for="email">E-mail cím</label>
-              <input type="email" name="email" id="email" placeholder="E-mail cím">
-              <textarea name="info" id="info" cols="30" rows="10" placeholder="Egyéb információk"></textarea>
+            <legend>
+              <h3>Küldj üzenetet!</h3>
+            </legend>
+            <label for="nev">Név</label>
+            <input type="text" name="nev" id="nev" placeholder="Teljes Név">
+            <label for="phone">Telefonszám</label>
+            <input type="tel" name="phone" id="phone" placeholder="Telefonszám">
+            <label for="email">E-mail cím</label>
+            <input type="email" name="email" id="email" placeholder="E-mail cím">
+            <textarea name="info" id="info" cols="30" rows="10" placeholder="Egyéb információk"></textarea>
           </fieldset>
         </form>
       </div>
     </div>
   </main>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Menü</button>
   <footer>
     <div>All right reserved: Zax Kitti E.V.</div>
     <div>Made by zaxxalexx</div>
   </footer>
+
+  <script>
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
 </body>
 
 </html>
