@@ -2,28 +2,41 @@
   box-sizing: border-box;
 }
  /* border: solid thin red; *˛/
-}
 
 /* header */
+
 header, #logo, img, nav {
   position: relative;
-  margin: 1px;
+ }
+ body {
+  margin: 0px;
+}
+#main {
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
 header {
-  background-image: url(ZaxTax_Header.png);
+  background-color: #050505;
   background-size: cover;
   background-position: center center;
   display: flex;
   justify-content: space-between;
 }
-body {
-  background-color: #6600cc;
+body, .container {
+  background-color: #f9e9d0;
 }
 #logo {
   width: auto;
   margin-left: 20px;
 }
-img {
+#logo img {
+  height: 250px;
+  width: auto;
+  object-fit: cover;
+}
+.container img {
   height: 250px;
   width: auto;
   object-fit: cover;
@@ -47,10 +60,6 @@ li a {
 }
 /* main */
 
-main, #services, #about-me, #news, #contact, .container, .content {
-/*  border: 1px solid blue; */
-  margin: 1px;
-}
 p, h1, h2, h3, h4, h5, ul, ol, li {
   margin-bottom: 15px;
   font-family: Montserrat;
@@ -63,26 +72,67 @@ h2 {
   text-align: center;
   font-size: 2rem;
 }
+
 p {
   font-size: 1rem;
   text-align: justify;
 }
+
+/* about-me */
+
 #profil img {
-  border: solid thin black;
+  /*border: solid thin #6b001a;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 3px 3px 10px black; */
+  width: 50vw;
+  height: auto;
+  border-radius: 48% 10% 48% 10%;
+  border: groove gray;
 }
-.container {
-  background-color: lightgray;
-  margin-bottom: 10px;
-  padding: 2px;
-  border: solid 1px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px black;
+#profil {
+  display: flex;
+  justify-content: center;
 }
-ol, ul, li {
-	margin-left: 1rem;
+@media screen and (min-width: 896px) {
+  #about-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #profil img {
+    width: auto;
+    height: 35vh;
+  }
+  #career {
+    width: 70vw;
+    height: auto;
+    padding: 5px;
+  }
+  #news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #news .container {
+    max-width: 1280px;
+  }
 }
+
+/* Services */
+
+.content p {
+ text-align: center;
+}
+
+@media screen and (min-width: 1100px) {
+  #services {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
+
 /* Contact */
 #quote {
   font-style: italic;
@@ -96,10 +146,41 @@ ol, ul, li {
 #facebook {
   color: black;
 }
-#form {
-  display: block;
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;  
+}
+#form-content {
+  width: 90%;
+  font-size: 1.5rem;
+}
+#nev, #phone, #email, #subject, #info {
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: rgb(245, 234, 234);
+  border: none;
+}
+#info {
+  margin-top: 5px;
+}
+.input, .label {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
+@media screen and (min-width: 768px) {
+  fieldset, #form-content {
+    max-width: 610px;
+  }
+  #form {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Scroll button */
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -108,21 +189,39 @@ ol, ul, li {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: green; /* Set a background color */
+  background-color: #6b001a; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 15px;  /*Some padding */
   border-radius: 50%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  width: 60px;
+  height: 60px;
 }
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+.arrow {
+  border: solid white;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 7px;
+
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
 
 /* Footer */
 
 footer {
-  background-color: gray;
+  background-color: #050505;
   text-align: center;
+  color: white;
 }
+
+
+
