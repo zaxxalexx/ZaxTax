@@ -1,41 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="ZaxTax_hatter.png">
   <meta charset="utf-8">
-  <title>ZaxTax</title>
+  <title>ZaxTax - könyvelés, adótanácsadás online</title>
+  <meta name="description" content="blablabla">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="scss/bootstrap.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  
 </head>
 
 <body>
-  <header id="header">
-    <div id="logo" class="left">
-      <img src="Logo.png" alt="ZaxTax">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <header id="header">
+      <div id="logo" class="left">
+        <img src="Logo.png" alt="ZaxTax">
+      </div>   
+      
+      <nav id="nav" class="right">
+        <ul>
+          <li>
+            <a href="index.html">Rólam</a>
+          </li>
+          <li>
+            <a href="#services">Miben tudok segíteni?</a>
+          </li>
+          <li>
+            <a href="#news">Miért engem válassz? </a>
+          </li>
+          <li>
+            <a href="kapcsolat.html">Kapcsolat</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid justify-content-end">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-    <nav id="nav" class="right">
-      <ul>
-        <li>
-          <a href="#about-me">Rólam</a>
-        </li>
-        <li>
-          <a href="#services">Miben tudok segíteni?</a>
-        </li>
-        <li>
-          <a href="#news">Miért engem válassz? </a>
-        </li>
-        <li>
-          <a href="#contact">Kapcsolat</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  </nav>
+  
   <main id="main">
     <h2 id="quote">„A jó könyvelő nem a szükséges rosszat, hanem a biztonságot jelenti a vállalkozások számára.”</h2>
-    <h1>Rólam</h1>
+    <h1>Bemutatkozás</h1>
     <div id="about-me">
       <div id="profil">
         <img src="Kitti_üzleti2.png" alt="Profilkép">
@@ -74,6 +89,7 @@
           <p>Szálláshely-szolgáltatással kapcsolatos </p>
           <p>tanácsadás, könyvelés</p>
         </div>
+        <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">Érdekel</a>
       </div>
       <div class="container">
         <h2>Kezdő vállalkozóknak</h2>
@@ -87,6 +103,7 @@
           <p>regisztráció önkormányzati nyilvántartásba</p>
           <p>Részletes bemutató számlázással kapcsolatban </p>
         </div>
+        <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">Érdekel</a>
       </div>
       <div class="container">
         <h2>Működő vállalkozóknak</h2>
@@ -99,6 +116,7 @@
           <p>Ügyviteli tanácsadás</p>
           <p>Bérszámfejtés</p>
         </div>
+        <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">Érdekel</a>
       </div>
     </div>
     <div id="news">
@@ -119,98 +137,18 @@
         </p>
       </div>
     </div>
-    <div id="contact">
-      <h1>Kapcsolat</h1>
-      <div>
-        <ul id="availability">
-          <li><i class="fa fa-phone-square" aria-hidden="true"></i>telefon</li>
-          <li><i class="fa fa-envelope-square" aria-hidden="true"></i>zaxtaxonline@gmail.com</li>
-          <li><i class="fa fa-facebook-square" aria-hidden="true"></i> <a href="https://www.facebook.com/zaxtaxonline"
-              id="facebook">Facebook</a></li>
-        </ul>
-      </div>
-      <div id="form">
-        <form action="send.php" method="post" enctype="multipart/form-data">
-          <fieldset>
-            <legend>
-              <h2>Kapcsolatfelvétel</h2>
-            </legend>
-            <div id="form-content">
-              <div>
-                <div class="label">
-                  <label for="nev">Név:</label>
-                </div>
-                <div class="input">
-                  <input type="text" name="nev" id="nev" required>
-                </div>
-              </div>
-              <div>
-                <div class="label">
-                  <label for="phone">Telefonszám:</label>
-                </div>
-                <div class="input">
-                  <input type="tel" name="phone" id="phone" required>
-                </div>
-              </div>
-              <div>
-                <div class="label">
-                  <label for="email">E-mail cím:</label>
-                </div>
-                <div class="input">
-                  <input type="email" name="email" id="email" required>
-                </div>
-              </div>
-              <div>
-                <div class="label">
-                  <label for="subject">Tárgy:</label>
-                </div>
-                <div class="input">
-                  <input type="text" name="subject" id="subject">
-                </div>
-              </div>
-              <div class="input">
-                <textarea name="info" id="info" cols="30" rows="10" placeholder="Egyéb információk"></textarea>
-              </div>
-              <button>Küldés</button>
-            </div>
-          </fieldset>
-        </form>
-      </div>
-    </div>
+    
   </main>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
+  <div onclick="topFunction()" id="myBtn" title="Go to top">
     <div class="arrow up"></div>
-  </button>
+  </div>
+  
   <footer>
     <div>All right reserved: Zax Kitti E.V.</div>
     <div>Made by zaxxalexx</div>
   </footer>
 
-  <script>
-    //Get the button:
-    mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-  </script>
-
-
-
-
+  <script src="add.js"></script>
 </body>
 
 </html>
