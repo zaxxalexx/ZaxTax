@@ -175,7 +175,7 @@ p {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-  width: 400px;
+  width: 90vw;
   border: solid thin red;
 }
 #services .container .btn {
