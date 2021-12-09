@@ -1,0 +1,30 @@
+  <div class="collapse" id="navbarToggleExternalContent">
+    <header id="header">
+      <div id="logo" class="left">
+        <img src="Logo.png" alt="ZaxTax">
+      </div>   
+      <nav id="nav" class="right">
+        <ul>
+          <li>
+            <a href="index.html">Rólam</a>
+          </li>
+          <li>
+            <a href="#services">Miben tudok segíteni?</a>
+          </li>
+          <li>
+            <a href="#news">Miért engem válassz? </a>
+          </li>
+          <li>
+            <a href="kapcsolat.html">Kapcsolat</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid justify-content-end">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
