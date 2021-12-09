@@ -16,38 +16,35 @@
 </head>
 
 <body>
-    <div class="collapse" id="navbarToggleExternalContent">
-        <header id="header">
-            <div id="logo" class="left">
-                <img src="Logo.png" alt="ZaxTax">
-            </div>
-            <nav id="nav" class="right">
-                <ul>
-                    <li>
-                        <a href="index.html">Rólam</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Miben tudok segíteni?</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Miért engem válassz? </a>
-                    </li>
-                    <li>
-                        <a href="kapcsolat.html">Kapcsolat</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid justify-content-end">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
+    <header id="header">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div id="logo">
+                    <a href="index.html"><img src="Logo.png" alt="ZaxTax"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Rólam</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Miben tudok segíteni?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Miért én? </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="kapcsolat.html">Kapcsolat</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
     <main>
         <div id="contact">
             <div id="form">
@@ -58,12 +55,6 @@
                             <p>Kérdésed van? Töltsd ki az űrlapot és hamarosan jelentkezek!</p>
                             <p></p>
                         </legend>
-                        <div class="question" id="question-icon1"><img src="outline_contact_support_black_48dp.png" alt=""></div>
-                        <div class="question" id="question-icon2"><img src="outline_contact_support_black_48dp.png" alt=""></div>
-                        <div class="question" id="question-icon3"><img src="outline_contact_support_black_48dp.png" alt=""></div>
-                        <div class="question" id="question-icon4"><img src="outline_contact_support_black_48dp.png" alt=""></div>
-                        <div class="question" id="question-icon5"><img src="outline_contact_support_black_48dp.png" alt=""></div>
-                        <div class="question" id="question-icon6"><img src="outline_contact_support_black_48dp.png" alt=""></div>
                         <div id="form-content">
                             <div>
                                 <div class="label">
@@ -101,8 +92,7 @@
                                 <label for="info">Üzenet</label>
                             </div>
                             <div class="input">
-                                <textarea name="info" id="info" cols="30" rows="10"
-                                    placeholder="Egyéb információk"></textarea>
+                                <textarea name="info" id="info" cols="30" rows="10"></textarea>
                             </div>
                             <button type="button" class="btn btn-outline-light right">Küldés</button>
                         </div>
