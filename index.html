@@ -9,48 +9,42 @@
   <meta name="description" content="blablabla">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="scss/bootstrap.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
-  
 </head>
 
 <body>
-  <div class="collapse" id="navbarToggleExternalContent">
-    <header id="header">
-      <div id="logo" class="left">
-        <img src="Logo.png" alt="ZaxTax">
-      </div>   
-      
-      <nav id="nav" class="right">
-        <ul>
-          <li>
-            <a href="index.html">Rólam</a>
-          </li>
-          <li>
-            <a href="#services">Miben tudok segíteni?</a>
-          </li>
-          <li>
-            <a href="#news">Miért engem válassz? </a>
-          </li>
-          <li>
-            <a href="kapcsolat.html">Kapcsolat</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid justify-content-end">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-  
+  <header id="header">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div id="logo">
+          <a href="index.html"><img src="Logo.png" alt="ZaxTax"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Rólam</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#services">Miben tudok segíteni?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#news">Miért én? </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="kapcsolat.html">Kapcsolat</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
   <main id="main">
-    <h2 id="quote">„A jó könyvelő nem a szükséges rosszat, hanem a biztonságot jelenti a vállalkozások számára.”</h2>
     <h1>Bemutatkozás</h1>
     <div id="about-me">
       <div id="profil">
@@ -77,6 +71,7 @@
         </div>
       </div>
     </div>
+    <h2 id="quote">„A jó könyvelő nem a szükséges rosszat, hanem a biztonságot jelenti a vállalkozások számára.”</h2>
     <h1>Miben tudok segíteni?</h1>
     <div id="services">
       <div class="container">
@@ -85,10 +80,12 @@
           <img src="tanacsadas.png" alt="Adótanácsadás">
         </div>
         <div class="content">
-          <p>SZJA bevallás elkészítése</p>
-          <p>Ingatlan bérbeadással kapcsolatos tanácsadás</p>
-          <p>Szálláshely-szolgáltatással kapcsolatos </p>
-          <p>tanácsadás, könyvelés</p>
+          <ul>
+            <li>SZJA bevallás elkészítése</li>
+            <li>Ingatlan bérbeadással kapcsolatos tanácsadás</li>
+            <li>Szálláshely-szolgáltatással kapcsolatos</li>
+            <li>tanácsadás, könyvelés</li>
+          </ul>
         </div>
         <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button">Érdekel</a>
       </div>
@@ -98,11 +95,12 @@
           <img src="vallalkozasinditas.png" alt="Vállakozás indítás">
         </div>
         <div class="content">
-          <p>Ingyenes konzultáció a vállalkozás indítása előtt</p>
-          <p>Egyéni vállalkozás indítása távoli asztal eléréssel</p>
-          <p>Kezdő bevallások beküldése, meghatalmazások,</p>
-          <p>regisztráció önkormányzati nyilvántartásba</p>
-          <p>Részletes bemutató számlázással kapcsolatban </p>
+          <ul>
+            <li>Ingyenes konzultáció a vállalkozás indítása előtt</li>
+            <li>Egyéni vállalkozás indítása távoli asztal eléréssel</li>
+            <li>Kezdő bevallások beküldése, meghatalmazások, regisztráció önkormányzati nyilvántartásba</li>
+            <li>Részletes bemutató számlázással kapcsolatban</li>
+          </ul>
         </div>
         <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button">Érdekel</a>
       </div>
@@ -112,10 +110,12 @@
           <img src="konyveles.png" alt="Könyvelés">
         </div>
         <div class="content">
-          <p>Hozott anyagból tárgyévi könyvelés felülvizsgálata</p>
-          <p>Adótanácsadás</p>
-          <p>Ügyviteli tanácsadás</p>
-          <p>Bérszámfejtés</p>
+          <ul>
+            <li>Hozott anyagból tárgyévi könyvelés felülvizsgálata</li>
+            <li>Adótanácsadás</li>
+            <li>Ügyviteli tanácsadás</li>
+            <li>Bérszámfejtés</li>
+          </ul>
         </div>
         <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button">Érdekel</a>
       </div>
@@ -138,12 +138,12 @@
         </p>
       </div>
     </div>
-    
+
   </main>
   <div onclick="topFunction()" id="myBtn" title="Go to top">
     <div class="arrow up"></div>
   </div>
-  
+
   <footer>
     <div>All right reserved: Zax Kitti E.V.</div>
     <div>Made by zaxxalexx</div>
