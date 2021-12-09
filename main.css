@@ -52,7 +52,7 @@ body, .container {
 }
 .container img {
   height: auto;
-  width: 300px;
+  width: 200px;
   object-fit: cover;
 }
 .picture {
@@ -83,9 +83,7 @@ li a {
   .container-fluid {
     display: flex !important;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 17vh;
+    height: 160px;
   }
   .navbar-nav {
     display: flex;
@@ -93,15 +91,6 @@ li a {
     justify-content: space-around;
     align-items: center;
     width: 80vw;
-
-    .dropdown-menu {
-      position: absolute;
-    }
-
-    .nav-link {
-      padding-right: $navbar-nav-link-padding-x;
-      padding-left: $navbar-nav-link-padding-x;
-    }
   }
   
   .navbar-nav-scroll {
