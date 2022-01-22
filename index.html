@@ -3,10 +3,9 @@
 
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="shortcut icon" type="image/x-icon" href="ZaxTax_hatter.png">
   <meta charset="utf-8">
   <title>ZaxTax - könyvelés, adótanácsadás online</title>
-  <meta name="description" content="blablabla">
+  <meta name="description" content="Könyvelés Adótanácsadás Online">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="scss/bootstrap.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -20,7 +19,7 @@
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
         <div id="logo">
-          <a href="index.html"><img src="zaxtax_vilagos rozsaszin.png" alt="ZaxTax"></a>
+          <a href="index.html"><img src="képek/zaxtax_bordo.png" alt="ZaxTax"></a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Rólam</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#services">Miben tudok segíteni?</a>
+              <a class="nav-link active" aria-current="page" href="#about-me">Rólam</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#news">Miért én? </a>
@@ -42,13 +38,62 @@
             </li>
           </ul>
         </div>
+      </div>
     </nav>
   </header>
   <main id="main">
-    <h1>Bemutatkozás</h1>
+    <h1>Miben tudok segíteni?</h1>
+    <div id="services">
+      <div class="container">
+        <h3>Magánszemélyeknek</h3>
+        <div class="picture">
+          <img src="képek/maganszemelyek.png" alt="Adótanácsadás">
+        </div>
+        <div class="content">
+          <ul>
+            <li>SZJA bevallás elkészítése</li>
+            <li>Ingatlan bérbeadással kapcsolatos tanácsadás</li>
+            <li>Szálláshely-szolgáltatással kapcsolatos</li>
+            <li>tanácsadás, könyvelés</li>
+          </ul>
+        </div>
+        <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button">Érdekel</a>
+      </div>
+      <div class="container">
+        <h3>Kezdő vállalkozóknak</h3>
+        <div class="picture">
+          <img src="képek/kezdo_vallalkozok.png" alt="Vállakozás indítás">
+        </div>
+        <div class="content">
+          <ul>
+            <li>Ingyenes konzultáció a vállalkozás indítása előtt</li>
+            <li>Egyéni vállalkozás indítása távoli asztal eléréssel</li>
+            <li>Kezdő bevallások beküldése, meghatalmazások, regisztráció önkormányzati nyilvántartásba</li>
+            <li>Részletes bemutató számlázással kapcsolatban</li>
+          </ul>
+        </div>
+        <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button">Érdekel</a>
+      </div>
+      <div class="container">
+        <h3>Működő vállalkozóknak</h3>
+        <div class="picture">
+          <img src="képek/mukodo_cegek.png" alt="Könyvelés">
+        </div>
+        <div class="content">
+          <ul>
+            <li>Hozott anyagból tárgyévi könyvelés felülvizsgálata</li>
+            <li>Adótanácsadás</li>
+            <li>Ügyviteli tanácsadás</li>
+            <li>Bérszámfejtés</li>
+          </ul>
+        </div>
+        <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button">Érdekel</a>
+      </div>
+    </div>
+    <h2>Bemutatkozás</h2>
     <div id="about-me">
       <div id="profil">
-        <img src="Kitti_üzleti2.png" alt="Profilkép">
+        <img src="képek/Kitti_üzleti2.png" alt="Profilkép">
       </div>
       <div class="container">
         <div id="career">
@@ -71,57 +116,82 @@
         </div>
       </div>
     </div>
-    <h2 id="quote">„A jó könyvelő nem a szükséges rosszat, hanem a biztonságot jelenti a vállalkozások számára.”</h2>
-    <h1>Miben tudok segíteni?</h1>
-    <div id="services">
-      <div class="container">
-        <h2>Magánszemélyeknek</h2>
-        <div class="picture">
-          <img src="maganszemelyek.png" alt="Adótanácsadás">
-        </div>
-        <div class="content">
-          <ul>
-            <li>SZJA bevallás elkészítése</li>
-            <li>Ingatlan bérbeadással kapcsolatos tanácsadás</li>
-            <li>Szálláshely-szolgáltatással kapcsolatos</li>
-            <li>tanácsadás, könyvelés</li>
-          </ul>
-        </div>
-        <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button">Érdekel</a>
+    <div id="quote-container">
+        <img class="line-icon" src="képek/Line_icon.png" alt="Line">
+        <h3 id="quote">
+          „ A jó könyvelő nem a szükséges rosszat, hanem a biztonságot jelenti a vállalkozások számára.”
+        </h3>
+        <img class="line-icon" src="képek/Line_icon.png" alt="Line">
+    </div>
+    <div>
+      <h2>Referenciák</h2>
+    </div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
-      <div class="container">
-        <h2>Kezdő vállalkozóknak</h2>
-        <div class="picture">
-          <img src="kezdo vallalkozok.png" alt="Vállakozás indítás">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="d-block w-100">
+            <h3>*Schutzbach Group Kft.:</h3>
+            <p>„Kittivel több mint egy éve vagyunk partnerségben. 
+            Ez idő alatt mindig rugalmasan és hatékonyan tudtunk együttműködni. 
+            Munkáját tekintve gyors, hatékony és precíz. 
+            Bármilyen kérdésem volt Ő azonnal tudta a válasz, 
+            de ha mégsem akkor a lehető leggyorsabban utána járt és azonnal hívott a megoldással. 
+            Fizetést tekintve teljesen korrekt árai vannak Kittinek. 
+            Csak ajánlani tudom jó szívvel mindenkinek. Egy szuper partner.
+            Köszönettel Schutzbach Roland”</p>
+          </div>
         </div>
-        <div class="content">
-          <ul>
-            <li>Ingyenes konzultáció a vállalkozás indítása előtt</li>
-            <li>Egyéni vállalkozás indítása távoli asztal eléréssel</li>
-            <li>Kezdő bevallások beküldése, meghatalmazások, regisztráció önkormányzati nyilvántartásba</li>
-            <li>Részletes bemutató számlázással kapcsolatban</li>
-          </ul>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="d-block w-100">
+            <h3>*Hetényi Nóra, Cottage House szálláshely</h3>
+            <p>"Zax Kittiről csak szuperlatívuszokban beszélhetek. Rendkívűl pontos,
+              felkészült, megbízható, és segítőkész. Személyes találkozásaink során
+              emberileg is nagyon megkedveltem Őt. Szívből ajánlom Kittit azoknak,
+              akik egy kitűnő könyvelőt keresnek!
+              Hetényi Nóra"</p>
+          </div>
         </div>
-        <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button">Érdekel</a>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="d-block w-100">
+            <h3>*Koczkáné Burány Tünde, KoczArt Hobbivarroda</h3>
+            <p>"Nekünk több cégünk és vállalkozásaink is vannak családilag, kft-k, egyéni vállalkozások. 
+              Tudni kell, hogy több könyvelőnk is volt már Kitti előtt, ezek a korábbi könyvelőink sajnos olyan hibákat követtek el, 
+              amik miatt anyagi kár is ért minket. Kittiről elmondhatom, hogy olyan könyvelő, 
+              aki az elmúlt évek alatt bizonyított. Bármilyen adózási formàt is választasz, 
+              bármilyen vállalkozási formát, ő minden esetben teljes körűen tájékoztat. 
+              Mindent aktualizál, számon tart, precíz és pontos. Teljes a bizalmunk felé, jó szívvel ajánlom mindenkinek. 
+              Mi a saját kárunkon tanultuk meg, miért és milyen fontos egy alapos, megbízható könyvelő. 
+              Kitti egy ilyen szakember, bàtran forduljatok hozzá."</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="d-block w-100">
+            <h3>*Salvo Rao</h3>
+            <p>"Voglio elogiare la ragioniera Zax Kitti - che mi ha risolto un problema di
+              tassazione internazionale- per la disponibilitá e l'alta professionalitá.
+             La mia soddisfazione é massima, e consiglio Kitti a chiunque cerchi per
+              la propria realtá aziendale o privata un'assistenza completa, sicura,e
+              affidabile."</p>
+          </div>
+        </div>
       </div>
-      <div class="container">
-        <h2>Működő vállalkozóknak</h2>
-        <div class="picture">
-          <img src="mukodo cegek.png" alt="Könyvelés">
-        </div>
-        <div class="content">
-          <ul>
-            <li>Hozott anyagból tárgyévi könyvelés felülvizsgálata</li>
-            <li>Adótanácsadás</li>
-            <li>Ügyviteli tanácsadás</li>
-            <li>Bérszámfejtés</li>
-          </ul>
-        </div>
-        <a href="kapcsolat.html" class="btn btn-outline-dark" tabindex="-1" role="button">Érdekel</a>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <div id="news">
-      <h1>Miért engem válassz? </h1>
+      <h2>Miért engem válassz? </h2>
       <div class="container">
         <p>Rengeteg egyéni vállalkozást indítottam már útjára,
           ismerem a kezdő vállalkozók küzdelmeit, kételyeit.
@@ -138,7 +208,7 @@
         </p>
       </div>
     </div>
-
+    
   </main>
   <div onclick="topFunction()" id="myBtn" title="Go to top">
     <div class="arrow up"></div>
