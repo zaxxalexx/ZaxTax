@@ -18,9 +18,9 @@ header, #logo, img, nav {
   margin: 0px;
 }
 #main {
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 a.nav-link:hover {
   color: #f9e9d0;
@@ -39,11 +39,11 @@ header {
   align-items: center;*/
 }
 body, .container {
-  background-color: #f9e9d0;
+  background-color: #f4f4f4;
 }
 
 #logo img {
-  height: 200px;
+  height: 150px;
   width: auto;
   object-fit: cover;
 }
@@ -77,13 +77,20 @@ li a {
     width: 100%;
   }
   #logo img {
-    width: 150px;
+    width: 230px;
     height: auto;
   }
+
   .container-fluid {
     display: flex !important;
     flex-direction: column;
+    align-items: center;
     height: 160px;
+  }
+  #logo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
   }
   .navbar-nav {
     display: flex;
@@ -124,7 +131,14 @@ h1 {
 }
 h2 {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+h3 {
+  text-align: center;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -135,10 +149,31 @@ p {
 #quote {
   font-family: Caveat;
   font-style:italic;
+  color: #f4f4f4;
   font-size: 2.5rem;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  text-shadow: 2px 2px 5px #db8780;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px #050505;
+  width: 100%;
+  margin: 0px;
+}
+#quote-container {
+  background-color: #6b001a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.line-icon {
+  width: 100%;
+}
+
+
+@media screen and (min-width:896px) {
+  .line-icon {
+    width: 750px;
+  }
 }
 
 /* about-me */
@@ -156,6 +191,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 #profil {
   margin: 50px 0px 50px 0px;
@@ -169,7 +205,7 @@ p {
     
   }
   #profil img {
-    width: 300px;
+    width: 380px;
     height: auto;
   }
   #career {
@@ -231,7 +267,7 @@ p {
     justify-content: space-evenly;
   }
   #services .container {
-    width: 30vw;
+    width: 29vw;
     height: 750px;
     max-width: 400px;
     border: solid thin #6b001a;
@@ -245,6 +281,35 @@ p {
 
 #news {
   margin-bottom: 50px;
+}
+
+.d-block p {
+  font-style: italic;
+}
+.d-block h3 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.carousel-inner {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.carousel-item {
+  border: double thick black;
+  padding: 10px 20px 10px 20px;
+  margin-right: 0%;
+
+}
+
+
+@media screen and (min-width: 768px){
+  .carousel-item {
+    max-width: 700px;
+    height: 300px;
+  }
 }
 
 /* Contact */
@@ -384,5 +449,13 @@ footer {
   color: white;
 }
 
+#thx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#thx h2 {
+  margin-bottom: 50px;
+}
 
 
