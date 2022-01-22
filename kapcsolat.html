@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="ZaxTax_hatter.png">
     <meta charset="utf-8">
     <title>ZaxTax - könyvelés, adótanácsadás online</title>
-    <meta name="description" content="blablabla">
+    <meta name="description" content="Könyvelés Adótanácsadás Online">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="scss/bootstrap.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -20,7 +20,7 @@
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
                 <div id="logo">
-                    <a href="index.html"><img src="zaxtax_vilagos rozsaszin.png" alt="ZaxTax"></a>
+                    <a href="index.html"><img src="képek/zaxtax_bordo.png" alt="ZaxTax"></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -30,31 +30,26 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Rólam</a>
+                          <a class="nav-link active" aria-current="page" href="index.html">Rólam</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Miben tudok segíteni?</a>
+                          <a class="nav-link active" aria-current="page" href="index.html">Miért én? </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Miért én? </a>
+                          <a class="nav-link active" aria-current="page" href="kapcsolat.html">Kapcsolat</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="kapcsolat.html">Kapcsolat</a>
-                        </li>
-                    </ul>
+                      </ul>
                 </div>
+            </div>
         </nav>
     </header>
     <main>
         <div id="contact">
             <div id="form">
-                <form action="send.php" method="post" enctype="multipart/form-data">
+                <form action="sendmail.php" method="POST" enctype="multipart/form-data">
                     <fieldset>
-                        <legend>
-                            <h2>Kapcsolatfelvétel</h2>
-                            <p>Kérdésed van? Töltsd ki az űrlapot és hamarosan jelentkezek!</p>
-                            <p></p>
-                        </legend>
+                        <h2>Kapcsolatfelvétel</h2>
+                        <p>Kérdésed van? Töltsd ki az űrlapot és hamarosan jelentkezek!</p>
                         <div id="form-content">
                             <div>
                                 <div class="label">
@@ -94,7 +89,7 @@
                             <div class="input">
                                 <textarea name="info" id="info" cols="30" rows="10"></textarea>
                             </div>
-                            <button type="button" class="btn btn-outline-light right">Küldés</button>
+                            <button class="btn btn-outline-light right">Küldés</button>
                         </div>
                     </fieldset>
                 </form>
